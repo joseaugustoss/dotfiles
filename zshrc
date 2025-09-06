@@ -128,7 +128,7 @@ autoload -Uz compinit && compinit
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-PATH=~/.console-ninja/.bin:$PATH
+
 alias ytmp3='yt-dlp -x --audio-format mp3 -o "%(title)s.%(ext)s"'
 alias ytbestaudio='yt-dlp -f bestaudio -o "%(title)s.%(ext)s"'
 alias ytmp4='yt-dlp -f "bestvideo[ext=mp4]+bestaudio[ext=m4a]/mp4" -o "%(title)s.%(ext)s"'
@@ -136,3 +136,4 @@ alias ytplmp3='yt-dlp -x --audio-format mp3 -o "%(playlist_index)02d - %(title)s
 alias ytsub='yt-dlp --write-subs --sub-lang pt --skip-download -o "%(title)s.%(ext)s"'
 alias ytupdate='sudo curl -L https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp -o /usr/local/bin/yt-dlp && sudo chmod a+rx /usr/local/bin/yt-dlp'
 
+alias v="nvim " 
