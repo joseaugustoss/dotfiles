@@ -10,7 +10,7 @@ if status is-interactive
     # shims do asdf (executáveis gerenciados)
     set -x PATH $ASDF_DATA_DIR/shims $PATH
     # JAVA
-    set -Ux JAVA_HOME /usr/lib/jvm/java-24-temurin-jdk
+    set -Ux JAVA_HOME /usr/lib/jvm/java-25-temurin-jdk
 
     # ANDROID
     set -Ux ANDROID_HOME $HOME/Android/Sdk
@@ -33,5 +33,8 @@ if status is-interactive
     ## alias 
     alias ls='colorls'
     alias ff='fastfetch'
+    alias upg='sudo dnf upgrade --refresh -y && flatpak update -y'
     # Commands to run in interactive sessions can go here
 end
+alias xcc="xclip -selection clipboard " 
+alias tma="tmux attach -t " 
